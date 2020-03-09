@@ -43,6 +43,7 @@
         //초기 시간은 항상 0밀리초 이다
             //일시 중지 중 일때 현실의 시간이 흐르고 있으므로, 밀리초 정보를 가지고 있어야한다.
         nowMilSeconds = (pauseMilSeconds + Date.now() - time);
+        //시, 분, 초가 잘 작동하는지 테스트를 원하면 1000값을 100, 10 으로 줄여서 테스트 하면 된다.
         forCalculate = nowMilSeconds / 1000
         seconds = Math.floor(forCalculate % 60);
         minute = Math.floor((forCalculate % 3600) / 60);
